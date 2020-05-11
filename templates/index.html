@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Product Search</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="header">
+  <h2>Search a Product</h2>
+</div>
+
+<div class="content">
+    <h6 style="text-align: center; color:brown;">( Source: Flipkart )</h6>
+    <div class="form">
+        <form action="/review" method="POST">
+            <input type="text" name="content" id="content">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+</div>
+{% endblock %}
